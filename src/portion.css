@@ -1,0 +1,38 @@
+.portionbox {
+    color: rgb(255, 72, 0);
+    background-color: aliceblue;
+    min-height: 70vh;
+    font-family: "Poppins", serif;
+    font-weight: 500;
+    max-height: fit-content;
+    width: 165vh;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 6px;
+    margin-top: 20px;
+    box-shadow: 11px 10px 10px rgb(158, 154, 154);
+}
+
+.portionbox h2 {
+    font-size: 30px;
+    margin-top: 20px;
+    font-weight: 1000;
+    color: rgb(194, 68, 19);
+    margin-bottom: 15px;
+}
+@media screen and (max-width: 400px) {
+    .portionbox {
+        width: 320px;
+        min-width: fit-content;
+        height: 100%;
+        border-radius: 20px;
+        margin-top: 40px;
+        padding: 4px;
+
+    }
+    .portionbox h2 {
+        font-size: 20px;
+    }
+  }

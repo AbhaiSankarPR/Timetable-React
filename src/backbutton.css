@@ -1,0 +1,36 @@
+.back-button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 20vh;
+    left: 10vh;
+    justify-content: center;
+    transition: transform 0.2s;
+}
+
+.back-button svg {
+    fill: #c24413;
+    width: 34px;
+    height: 34px;
+}
+
+.back-button:hover {
+    transform: scae(1.05);
+    border-style: none;
+}
+@media screen and (max-width: 400px) {
+    .back-button {
+        height: 60px;
+        width: 60px;
+        font-size: 5px;
+        left: -5px;
+        top: 70px;
+    }
+}

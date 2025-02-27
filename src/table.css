@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:wght@700&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(218, 87, 35);
+    user-select: none;
+
+}
+
+.dayanddate {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 95vh;
+    color: rgb(218, 87, 35);
+    height: 35px;
+    border-radius: 26px;
+    margin: 20px;
+    background-color: rgb(230, 231, 231);
+    padding: 8px 12px;
+    font-size: 30px;
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    box-shadow: 9px 9px 9px 3px #0000009f;
+
+    font-style: normal;
+}
+
+.date-day {
+    margin-left: auto;
+    font-size: 25px;
+    background-color: rgb(218, 87, 35);
+    height: 100%;
+    border-radius: 26px;
+    padding: 5px 5px;
+    color: white;
+    text-align: center;
+    width: 45%;
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.date-day:hover {
+    box-shadow: 2px 2px 92px 3px #00000088;
+
+}
+
+.bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(218, 87, 35);
+    height: 35px;
+    border-radius: 26px;
+    margin: 2.5vh;
+    padding: 8px 12px;
+    font-size: 30px;
+    font-weight: 700;
+    transition: all 0.3s;
+}
+
+.bar:hover {
+    scale: 1.05;
+}
+
+.details {
+    background-color: rgb(218, 87, 35);
+    height: 45px;
+    width: 45px;
+    border-radius: 26px;
+    padding: 1px 1px;
+    padding-top: 4px;
+    transition: all 0.3s;
+}
+
+.details:hover {
+    box-shadow: 5px 5px 5px 3px #00000054;
+}
+
+.upnext-container {
+    background-color: rgb(253, 253, 253);
+    color: rgb(218, 87, 35);
+    border-radius: 66px;
+    margin-top: 85px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    font-size: 21px;
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    margin-bottom: 10vh;
+    transition: all 0.4s;
+}
+
+.upnext-container:hover {
+    scale: 1.05;
+}
+
+.upnext-suject {
+    background-color: rgb(218, 87, 35);
+    color: rgb(253, 253, 253);
+    width: 75vh;
+    height: 9.5vh;
+    border-radius: 56px;
+    font-size: 35px;
+    font-family: "Poppins", serif;
+    font-weight: 800;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1px;
+}
+
+.upnext-date {
+    flex-direction: row;
+    gap: 0.2px;
+    font-size: 20px;
+}
+
+.upnext-day {
+    font-family: "Tourney", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    margin-top: 0px;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
+}
+@media screen and (max-width: 600px) {
+    .upnext-container{
+        flex-direction: column;
+        width: 190px;
+        height:150px;
+        border-radius: 66px;
+        justify-content: center;
+        font-size: 11px;
+        margin-top: -20px;
+        margin-left: 25%;
+    }
+    .upnext-suject {
+        width: 170px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 13px;
+        font-weight: 200;
+    }
+    
+    .upnext-date {
+        font-size: 11px;
+    }
+    
+    .upnext-day {
+        margin-top: 0px;
+    }
+    .bar {
+        height: 13px;
+        width: 175%;
+        border-radius: 16px;
+        margin: 17px;
+        padding: 10px 0px;
+        font-size: 25px;
+        justify-content:start;
+                
+    }
+    .dayanddate {
+        width: 40%;
+        color: rgb(218, 87, 35);
+        height: 38px;
+        border-radius: 16px;
+        margin: 15px;
+        padding: 3px 8px;
+        font-size: 17px;
+        font-weight: 600;
+        }
+    
+    .date-day {
+        margin-left: 70px;
+        font-size: 13px;
+        background-color: rgb(218, 87, 35);
+        height: 75%;
+        text-align: center;
+        border-radius: 16px;
+        padding: 6px 1px;
+        color: white;
+        width: 25%;
+        max-width: 980px;
+        font-family: "Raleway", serif;
+        font-weight: 600;
+    }
+    .details {
+        height: 35px;
+        width: 35px;
+        border-radius: 26px;
+        padding: 0px 0px;
+        padding-top: 4px;
+        margin-right: 0;
+    }
+  }

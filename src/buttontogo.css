@@ -1,0 +1,34 @@
+.btn {
+    height: 80px;
+    width: 290px;
+    background-color: transparent;
+    color: #c24413;
+    transition: all 0.3s;
+    position: fixed;
+    right: 40%;
+    top: 70vh;
+    border: 1px;
+    border-style: double;
+    font-size: 25px;
+    font-family: "Poppins", serif;
+    font-weight: 800;
+}
+
+.btn:hover {
+    scale: 1.1;
+}
+
+.btn:active {
+    border-style: none;
+}
+ @media screen and (max-width: 400px) {
+    .btn {
+        height: 80px;
+        width: 190px;
+        border-radius: 15px;
+        font-size: 25px;
+        left: 20%;
+        top: 58vh;
+    }
+    
+} 

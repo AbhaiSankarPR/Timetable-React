@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+.header {
+  top: 15px;
+  left: 0;
+  /* margin-bottom: px; */
+  height: 15%;
+  max-height: max-content;
+  width: 97%;
+  color: #f3eaad;
+  position: fixed;
+  /* background-color: #8e1616d8; */
+  /* color: rgb(218, 87, 35); */
+  color: #c24413;
+  font-size: 50px;
+  border-radius: 20px;
+  margin: 10px;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  text-align: start;
+  font-family: "Sansita", serif;
+  font-weight: 700;
+  font-style: normal;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  margin-right: 20px;
+}
+
+/* svg {
+  fill: #f3eaad;
+  
+} */
+
+svg:hover {
+  fill: #ffffff;
+  cursor: pointer;
+}
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 27px;
+  }
+  svg{
+    height: 34px;
+    width: 34px;
+  }
+  
+}

@@ -1,0 +1,41 @@
+ body {
+   font-family: "Sansita", serif;
+   font-weight: 100;
+   background-color: #dbd4a2;
+   width: 100%;
+   overflow-x: hidden;
+ }
+
+ .timetable-intro {
+   font-size: 0.9em;
+   color: #c24413;
+   margin-bottom: 2em;
+   position: absolute;
+   right: 15vh;
+   top: 25vh;
+   text-align: right;
+   font-family: "Poppins", serif;
+   font-weight: 600;
+   width: 80%;
+ }
+
+ .timetable-intro h1 {
+   font-weight: 800;
+ }
+
+ .timetable-intro ul {
+   list-style-type: none;
+   padding: 0;
+ }
+ @media screen  and (max-width: 400px) {
+   .timetable-intro {
+     font-size: 12px;
+     right: 5vh;
+     top: 19vh;
+     width: 90%;
+   }
+   .timetable-intro h1 {
+     font-size: 1.3em;
+   }
+  
+ }
