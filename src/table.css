@@ -182,10 +182,10 @@ body {
         margin-left: 70px;
         font-size: 13px;
         background-color: rgb(218, 87, 35);
-        height: 75%;
+        height: 85%;
         text-align: center;
         border-radius: 16px;
-        padding: 6px 1px;
+        padding-top: 0px;
         color: white;
         width: 25%;
         max-width: 980px;
