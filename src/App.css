@@ -35,7 +35,7 @@
  @media screen  and (max-width: 400px) {
    .timetable-intro {
      font-size: 12px;
-     right: 5vh;
+     right: 2vh;
      top: 19vh;
      width: 90%;
    }
