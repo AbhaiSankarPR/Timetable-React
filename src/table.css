@@ -134,7 +134,7 @@ body {
 @media screen and (max-width: 600px) {
     .upnext-container{
         flex-direction: column;
-       width: 220px;
+       width: 200px;
         height:190px;
         border-radius: 66px;
         justify-content: center;
