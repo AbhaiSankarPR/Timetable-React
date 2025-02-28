@@ -131,17 +131,20 @@ body {
     font-variation-settings:
         "wdth" 100;
 }
+
+
 @media screen and (max-width: 600px) {
-    .upnext-container{
+    .upnext-container {
         flex-direction: column;
-       width: 200px;
-        height:190px;
+        width: 200px;
+        height: 190px;
         border-radius: 66px;
         justify-content: center;
         font-size: 11px;
         margin-top: -20px;
         margin-left: 25%;
     }
+
     .upnext-suject {
         width: 200px;
         height: 70px;
@@ -149,14 +152,15 @@ body {
         font-size: 17px;
         font-weight: 800;
     }
-    
+
     .upnext-date {
-        font-size: 11px;
+        font-size: 15px;
     }
-    
+
     .upnext-day {
         margin-top: 0px;
     }
+
     .bar {
         height: 13px;
         width: 175%;
@@ -164,9 +168,10 @@ body {
         margin: 17px;
         padding: 10px 0px;
         font-size: 25px;
-        justify-content:start;
-                
+        justify-content: start;
+
     }
+
     .dayanddate {
         width: 40%;
         color: rgb(218, 87, 35);
@@ -176,8 +181,8 @@ body {
         padding: 3px 8px;
         font-size: 17px;
         font-weight: 600;
-        }
-    
+    }
+
     .date-day {
         margin-left: 70px;
         font-size: 13px;
@@ -192,6 +197,7 @@ body {
         font-family: "Raleway", serif;
         font-weight: 600;
     }
+
     .details {
         height: 35px;
         width: 35px;
@@ -200,4 +206,59 @@ body {
         padding-top: 4px;
         margin-right: 0;
     }
-  }
+}
+
+@media screen and (max-width: 350px) {
+    .upnext-container {
+        flex-direction: column;
+        width: 200px;
+        height: 190px;
+        border-radius: 66px;
+        justify-content: center;
+        font-size: 11px;
+        margin-top: -20px;
+        margin-left: 25%;
+    }
+
+    .upnext-suject {
+        width: 200px;
+        height: 70px;
+        border-radius: 30px;
+        font-size: 17px;
+        font-weight: 800;
+    }
+
+
+    .upnext-day {
+        margin-top: 0px;
+    }
+
+    .bar {
+        width: 130%;
+
+    }
+
+    .dayanddate {
+        display: flex;
+        justify-content: space-between;
+        flex: 0.6;
+    }
+
+    .date-day {
+        margin-left: 70px;
+        font-size: 10px;
+        height: 26px;
+        padding-top: 5px;
+        width: 90px;
+        max-width: 80px;
+    }
+
+    .details {
+        height: 35px;
+        width: 35px;
+        border-radius: 26px;
+        padding: 0px 0px;
+        padding-top: 4px;
+        margin-right: 0;
+    }
+}
