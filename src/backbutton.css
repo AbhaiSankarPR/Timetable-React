@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     position: fixed;
-    top: 20vh;
+    top: 20dvh;
     left: 10vh;
     justify-content: center;
     transition: transform 0.2s;
@@ -37,6 +37,5 @@
         width: 60px;
         font-size: 5px;
         left: -5px;
-        top: 70px;
     }
 }
