@@ -21,14 +21,15 @@
 .btn:active {
     border-style: none;
 }
- @media screen and (max-width: 400px) {
+
+@media screen and (max-width: 600px) {
     .btn {
         height: 80px;
         width: 190px;
         border-radius: 15px;
-        font-size: 25px;
+        font-size: 24px;
         left: 20%;
-        top: 58vh;
+        top: 78vh;
     }
-    
-} 
+
+}
