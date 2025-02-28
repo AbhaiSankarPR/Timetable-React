@@ -7,6 +7,7 @@ import SubjectPortion from './Portion.jsx';
 import './App.css';
 import BackButton from './backbutton.jsx';
 import LoadingScreen from './LoadingScreen.jsx';
+import AdminLogin from './AdminLogin.jsx';
 
 function App() {
   return (
@@ -54,6 +55,8 @@ function AppContent() {
         <Route path="/" element={<ButtonToGo />} />
         <Route path="/timetable" element={<TablePage />} />
         <Route path="/subject/:subject" element={<SubjectPortion />} />
+        <Route path="/AdminLogin" element={<AdminLogin/>} />
+
       </Routes>
     </>
   );
