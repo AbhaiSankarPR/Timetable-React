@@ -1,7 +1,9 @@
  body {
    font-family: "Sansita", serif;
    font-weight: 100;
-   background-color: #dbd4a2;  
+   background-color: #dbd4a2;
+ 
+   
  }
  html, body {
   width: 100%;
@@ -32,9 +34,18 @@
    list-style-type: none;
    padding: 0;
  }
+ @media screen and (max-width: 600px) {
+  .timetable-intro {
+    font-size: 14px;
+    right: 2vh;
+    top: 19vh;
+    width: 90%;
+  }
+  
+}
  @media screen  and (max-width: 400px) {
    .timetable-intro {
-     font-size: 12px;
+     /* font-size: 15px; */
      right: 2vh;
      top: 19vh;
      width: 90%;
