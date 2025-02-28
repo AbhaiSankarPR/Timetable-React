@@ -48,3 +48,23 @@ input::placeholder {
     margin-left: 20%;
     margin-top: 10%;
 }
+@media screen and (max-width: 600px) {
+    .login {
+        margin: 10vh 5vh;
+        padding: 5vh 5vh;
+    }
+    input {
+        width: 85%;
+        padding: 8px;
+        margin: 10px;
+    }
+    .login-button {
+        width: 50%;
+    }
+    h1{
+        font-size: 20px;
+    }
+    label{
+        font-size: 15px;
+    }
+}
