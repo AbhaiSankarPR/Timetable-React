@@ -22,17 +22,20 @@
     color: rgb(194, 68, 19);
     margin-bottom: 15px;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1000px) {
     .portionbox {
-        width: 320px;
-        min-width: fit-content;
-        height: 100%;
-        border-radius: 20px;
-        margin-top: 40px;
-        padding: 4px;
+    width:80dvw;
+    }
+   
+  }
+
+  @media screen and (max-width: 350px) {
+    .portionbox {
+       font-size: 15px;
 
     }
     .portionbox h2 {
         font-size: 20px;
     }
-  }
+} 
+ 
