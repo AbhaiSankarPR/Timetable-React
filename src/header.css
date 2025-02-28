@@ -3,14 +3,11 @@
 .header {
   top: 15px;
   left: 0;
-  /* margin-bottom: px; */
   height: 15%;
   max-height: max-content;
   width: 97%;
   color: #f3eaad;
   position: fixed;
-  /* background-color: #8e1616d8; */
-  /* color: rgb(218, 87, 35); */
   color: #c24413;
   font-size: 50px;
   border-radius: 20px;
@@ -30,11 +27,6 @@
   margin-right: 20px;
 }
 
-/* svg {
-  fill: #f3eaad;
-  
-} */
-
 svg:hover {
   fill: #ffffff;
   cursor: pointer;
@@ -49,3 +41,8 @@ svg:hover {
   }
   
 }
+@media screen and (max-height: 600px) {
+  .header{
+      top:0px;
+  }
+}   
