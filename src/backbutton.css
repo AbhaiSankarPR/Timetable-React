@@ -25,7 +25,13 @@
     transform: scae(1.05);
     border-style: none;
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 1000px) {
+    .back-button {
+        font-size: 5px;
+        left: -1px;
+    }
+}
+@media screen and (max-width: 600px) {
     .back-button {
         height: 60px;
         width: 60px;
