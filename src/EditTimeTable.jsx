@@ -4,6 +4,7 @@ function EditTimeTable() {
         <div>
             <h1>Edit Time Table</h1>
             <p>Coming Soon...</p>
+            <p>Be Patient...</p>
         </div>
     );
 }
