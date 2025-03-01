@@ -9,6 +9,7 @@ import BackButton from './backbutton.jsx';
 import LoadingScreen from './LoadingScreen.jsx';
 import AdminLogin from './AdminLogin.jsx';
 import EditTimeTable from './EditTimeTable.jsx';
+import NotFound from './NotFound.jsx';
 
 function App() {
   return (
@@ -58,6 +59,7 @@ function AppContent() {
         <Route path="/subject/:subject" element={<SubjectPortion />} />
         <Route path="/AdminLogin" element={<AdminLogin/>} />
         <Route path="/EditTimeTable" element={<EditTimeTable/>} />
+        <Route path="*" element={<NotFound />} />
 
       </Routes>
     </>
