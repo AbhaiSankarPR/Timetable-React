@@ -1,13 +1,15 @@
 import React, { useState } from "react";
+import { useNavigate } from 'react-router-dom';
 import "./AdminLogin.css";
 
 function AdminLogin() {
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
+    const navigate = useNavigate();
 
     function login() {
         if (username === "user" && password === "admin") {
-            window.location.href = "/EditTimeTable";
+            navigate("/EditTimeTable");
         } else {
             alert("Invalid Credentials");
         }
