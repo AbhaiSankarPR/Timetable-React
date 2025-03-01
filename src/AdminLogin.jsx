@@ -7,7 +7,6 @@ function AdminLogin() {
 
     function login() {
         if (username === "user" && password === "admin") {
-            alert("Login Successful");
             window.location.href = "/EditTimeTable";
         } else {
             alert("Invalid Credentials");
