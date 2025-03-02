@@ -26,7 +26,7 @@
 .create-login button{
     border-radius: 10px;
     height: 7dvh;
-    margin: 2dvh 6dvw;
+    margin: 2dvh 30%;
     width: 10dvw;
     font-weight: 700;
     background-color: rgb(194, 68, 19);
@@ -35,6 +35,35 @@
 }
 .create-login button:hover {
     background-color: rgba(255, 255, 255, 0.192);
-    /* border: solid rgb(167, 131, 117); */
     color: rgb(194, 68, 19);
+}
+@media screen and (max-width: 600px) {
+    .create-login {
+        padding: 2dvh 4dvh;
+        margin: 6vh 5vh;
+        height: fit-content;
+    }
+    .create-login input {
+        width: 56vw;
+        margin-left: 0;
+    }
+    .create-login button {
+        width: 20vw;
+    }
+}
+@media screen and (max-width: 350px) {
+    .create-login {
+        padding: 2dvh 4dvh;
+        /* margin: 6vh 5vh; */
+        margin-top: 18dvh;
+        height: 80vh;
+        max-height: fit-content;
+    }
+    .create-login input {
+        width: 56vw;
+        margin-left: 0;
+    }
+    .create-login button {
+        width: 20vw;
+    }
 }

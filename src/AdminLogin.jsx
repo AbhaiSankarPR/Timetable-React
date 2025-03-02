@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { signInWithEmailAndPassword } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
-import { auth } from "./Firebase"; // Firebase authentication instance
+import { auth } from "./Firebase"; 
 import "./AdminLogin.css";
 
 function AdminLogin() {
@@ -9,7 +9,6 @@ function AdminLogin() {
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
-    // Login function using Firebase Authentication
     const login = async () => {
         try {
             await signInWithEmailAndPassword(auth, email, password);

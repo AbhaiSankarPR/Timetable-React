@@ -104,4 +104,8 @@ input::placeholder {
     label {
         font-size: 15px;
     }
+    .login-info {
+        width: 100%;
+    }
+
 }
