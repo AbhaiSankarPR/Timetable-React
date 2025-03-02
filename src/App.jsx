@@ -10,6 +10,23 @@ import LoadingScreen from './LoadingScreen.jsx';
 import AdminLogin from './AdminLogin.jsx';
 import EditTimeTable from './EditTimeTable.jsx';
 import NotFound from './NotFound.jsx';
+import CreatenewLogin from './CreatenewLogin.jsx';
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyBrgdWlI10a2zC6yBRyvw2YttXv81WMFRU",
+  authDomain: "timetable-react.firebaseapp.com",
+  databaseURL: "https://timetable-react-default-rtdb.firebaseio.com",
+  projectId: "timetable-react",
+  storageBucket: "timetable-react.firebasestorage.app",
+  messagingSenderId: "781063761197",
+  appId: "1:781063761197:web:f8f07bf7615f896e0977a4",
+  measurementId: "G-SZ9KQHTRXK"
+};
+
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 function App() {
   return (
@@ -60,6 +77,7 @@ function AppContent() {
         <Route path="/AdminLogin" element={<AdminLogin/>} />
         <Route path="/EditTimeTable" element={<EditTimeTable/>} />
         <Route path="*" element={<NotFound />} />
+        <Route path="/CreatenewLogin" element={<CreatenewLogin/>} />
 
       </Routes>
     </>

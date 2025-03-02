@@ -1,40 +1,50 @@
 import React, { useState } from "react";
-import { useNavigate } from 'react-router-dom';
+import { signInWithEmailAndPassword } from "firebase/auth";
+import { useNavigate } from "react-router-dom";
+import { auth } from "./Firebase"; // Firebase authentication instance
 import "./AdminLogin.css";
 
 function AdminLogin() {
-    const [username, setUsername] = useState("");
+    const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const navigate = useNavigate();
 
-    function login() {
-        if (username === "user" && password === "admin") {
-            navigate("/EditTimeTable");
-        } else {
+    // Login function using Firebase Authentication
+    const login = async () => {
+        try {
+            await signInWithEmailAndPassword(auth, email, password);
+            navigate("/EditTimeTable"); 
+        } catch (error) {
             alert("Invalid Credentials");
+            console.error("Login Error:", error.message);
         }
-    }
+    };
 
     return (
         <div className="login">
             <h1>Admin Login</h1>
-            <label htmlFor="username">Username</label>
+            <label htmlFor="email">Email</label>
             <input
-                type="text"
-                id="username"
-                placeholder="Username"
-                value={username}
-                onChange={(e) => setUsername(e.target.value)}
+                type="email"
+                id="email"
+                placeholder="Enter Admin Email"
+                value={email}
+                autoComplete="off"
+                onChange={(e) => setEmail(e.target.value)}
             />
             <label htmlFor="password">Password</label>
             <input
                 type="password"
                 id="password"
-                placeholder="Password"
+                placeholder="Enter Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
             />
             <button className="login-button" onClick={login}>Login</button>
+            <div className="login-info">
+                <p>If you are not an admin, please go back to the home page.</p>
+                <p>If not logged in, please <span className="signup-link" onClick={() => navigate("/CreatenewLogin")}>sign up</span>.</p>
+            </div>
         </div>
     );
 }

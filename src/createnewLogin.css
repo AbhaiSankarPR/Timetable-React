@@ -1,0 +1,40 @@
+.create-login {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid rgb(194, 68, 19);
+    padding: 2dvh 8dvh;
+    height: 90dvh;
+    border-radius: 15px;
+    background: blur(10px);
+    margin: 0 20vh;
+    box-shadow: 0px 0px 70px rgba(194, 69, 19, 0.733);
+}
+.create-login input {
+    margin: 5px;
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 16px;
+    user-select: none;
+    color: #7e0f0f;
+    width: 23dvw;
+    border: 1px solid rgb(194, 68, 19);
+}
+.create-login label {
+    font-size: 15px;
+    font-weight: 400;
+}
+.create-login button{
+    border-radius: 10px;
+    height: 7dvh;
+    margin: 2dvh 6dvw;
+    width: 10dvw;
+    font-weight: 700;
+    background-color: rgb(194, 68, 19);
+    border-style: none;
+    transition: all 0.3s;
+}
+.create-login button:hover {
+    background-color: rgba(255, 255, 255, 0.192);
+    /* border: solid rgb(167, 131, 117); */
+    color: rgb(194, 68, 19);
+}
