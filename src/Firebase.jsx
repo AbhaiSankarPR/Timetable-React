@@ -2,7 +2,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBrgdWlI10a2zC6yBRyvw2YttXv81WMFRU",
+  apiKey: process.env.firebasetimetable,
   authDomain: "timetable-react.firebaseapp.com",
   databaseURL: "https://timetable-react-default-rtdb.firebaseio.com",
   projectId: "timetable-react",
