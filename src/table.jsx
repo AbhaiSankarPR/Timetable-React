@@ -1,30 +1,58 @@
 import React, { useState, useEffect } from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import "./table.css";
 
 function Table() {
   const navigate = useNavigate();
+  const { subject } = useParams();
 
-  const exams = [
-    { date: "20 FEB", day: "Mon", subject: "Mathematics", key: "math" },
-    { date: "21 FEB", day: "Tues", subject: "English", key: "english" },
-    { date: "23 FEB", day: "Wed", subject: "Science", key: "science" },
-    { date: "24 FEB", day: "Thurs", subject: "Social Studies", key: "social" },
-    { date: "28 FEB", day: "Fri", subject: "Computer Science", key: "computer" },
-  ];
+  const subjectsData = {
+    cse: [
+      { subject: "Data Structures", key: "ds", examDate: "2025-04-10" },
+      { subject: "Operating Systems", key: "os", examDate: "2025-04-15" },
+      { subject: "Algorithms", key: "algo", examDate: "2025-04-20" },
+      { subject: "Database Management", key: "dbms", examDate: "2025-04-25" },
+      { subject: "Computer Networks", key: "cn", examDate: "2025-04-30" },
+    ],
+    mech: [
+      { subject: "Thermodynamics", key: "thermo", examDate: "2025-04-12" },
+      { subject: "Fluid Mechanics", key: "fluid", examDate: "2025-04-17" },
+      { subject: "Machine Design", key: "machine", examDate: "2025-04-22" },
+      { subject: "Engineering Mechanics", key: "eng_mech", examDate: "2025-04-27" },
+      { subject: "Manufacturing Processes", key: "manufacturing", examDate: "2025-05-02" },
+    ],
+    eee: [
+      { subject: "Circuit Theory", key: "circuit", examDate: "2025-04-11" },
+      { subject: "Power Systems", key: "power", examDate: "2025-04-16" },
+      { subject: "Electromagnetics", key: "em", examDate: "2025-04-21" },
+      { subject: "Electrical Machines", key: "machines", examDate: "2025-04-26" },
+      { subject: "Control Systems", key: "control", examDate: "2025-05-01" },
+    ],
+    civil: [
+      { subject: "Structural Analysis", key: "structure", examDate: "2025-04-13" },
+      { subject: "Concrete Technology", key: "concrete", examDate: "2025-04-18" },
+      { subject: "Surveying", key: "survey", examDate: "2025-04-23" },
+      { subject: "Geotechnical Engineering", key: "geotech", examDate: "2025-04-28" },
+      { subject: "Transportation Engineering", key: "transport", examDate: "2025-05-03" },
+    ],
+  };
 
   const [upNext, setUpNext] = useState(null);
 
   useEffect(() => {
-    const today = new Date();
-    const formattedToday = today.toLocaleDateString("en-GB", {
-      day: "2-digit",
-      month: "short",
-    }).toUpperCase(); 
+    if (!subject || !subjectsData[subject]) return;
 
-    const upcomingExam = exams.find((exam) => exam.date >= formattedToday);
+    const today = new Date();
+
+    const upcomingExam = subjectsData[subject]
+      .map((exam) => ({
+        ...exam,
+        examDateObj: new Date(exam.examDate),
+      }))
+      .find((exam) => exam.examDateObj >= today);
+
     setUpNext(upcomingExam);
-  }, []);
+  }, [subject]);
 
   return (
     <>
@@ -32,10 +60,9 @@ function Table() {
         <p>Up Next</p>
         {upNext ? (
           <>
-            <div className="upnext-suject">{upNext.subject}</div>
+            <div className="upnext-subject">{upNext.subject}</div>
             <div className="upnext-date">
-              <div>{upNext.date}</div>
-              <div className="upnext-day">{upNext.day}</div>
+              <div>{upNext.examDate}</div>
             </div>
           </>
         ) : (
@@ -43,17 +70,15 @@ function Table() {
         )}
       </div>
 
-      {exams.map((exam, index) => (
+      {subjectsData[subject]?.map((exam, index) => (
         <div className="bar" key={index}>
           <div className="dayanddate">
             <span>{exam.subject}</span>
-            <div className="date-day">
-              {exam.date} {exam.day}
-            </div>
+            <div className="date-day">{exam.examDate}</div>
           </div>
           <div
             className="details"
-            onClick={() => navigate(`/subject/${exam.key}`)} 
+            onClick={() => navigate(`/subjects/${subject}/${exam.subject}`)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

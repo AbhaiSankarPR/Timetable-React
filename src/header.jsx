@@ -9,6 +9,11 @@ function Header() {
             navigate("/AdminLogin");
         }
     };
+    const home=() => {
+        if (window.location.pathname != "/") { 
+            navigate("/");
+        }
+    };
 
     return (
         <div className="header">
@@ -17,6 +22,7 @@ function Header() {
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="56px"
+                    onClick={home} 
                     viewBox="0 -960 960 960"
                     width="56px"
                     fill="#c24413"

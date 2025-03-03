@@ -54,7 +54,6 @@
 @media screen and (max-width: 350px) {
     .create-login {
         padding: 2dvh 4dvh;
-        /* margin: 6vh 5vh; */
         margin-top: 18dvh;
         height: 80vh;
         max-height: fit-content;

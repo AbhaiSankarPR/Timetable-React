@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation, Navigate } from 'react-router-dom';
 import ButtonToGo from './buttonToGo.jsx';
 import Header from './header.jsx';
 import TablePage from './timetablepage.jsx';
@@ -11,6 +12,8 @@ import AdminLogin from './AdminLogin.jsx';
 import EditTimeTable from './EditTimeTable.jsx';
 import NotFound from './NotFound.jsx';
 import CreatenewLogin from './CreatenewLogin.jsx';
+import About from './About.jsx';
+import Subject from './Subject.jsx';
 
 function App() {
   return (
@@ -23,6 +26,7 @@ function App() {
 function AppContent() {
   const location = useLocation();
   const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
 
   useEffect(() => {
     setLoading(true);
@@ -51,17 +55,20 @@ function AppContent() {
             <li>🔍 Click on subjects for in-depth portion details</li>
             <li>⏳ Stay ahead, stay prepared, stay stress-free!</li>
           </ul>
+          <p className='abouts'>To know more about this project : <span className='KnowMore' onClick={() => navigate("/About")}>Know More!</span></p>
         </div>
       )}
 
       <Routes>
         <Route path="/" element={<ButtonToGo />} />
-        <Route path="/timetable" element={<TablePage />} />
-        <Route path="/subject/:subject" element={<SubjectPortion />} />
-        <Route path="/AdminLogin" element={<AdminLogin/>} />
-        <Route path="/EditTimeTable" element={<EditTimeTable/>} />
+        <Route path="/timetable/:subject" element={<TablePage />} />
+        <Route path="/Subject" element={<Subject />} />
+        <Route path="/subjects/:department/:subject" element={<SubjectPortion />} />
+        <Route path="/AdminLogin" element={<AdminLogin />} />
+        <Route path="/EditTimeTable" element={<EditTimeTable />} />
+        <Route path="/CreatenewLogin" element={<CreatenewLogin />} />
+        <Route path="/About" element={<About />} />
         <Route path="*" element={<NotFound />} />
-        <Route path="/CreatenewLogin" element={<CreatenewLogin/>} />
 
       </Routes>
     </>

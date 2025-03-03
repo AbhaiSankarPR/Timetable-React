@@ -6,7 +6,7 @@ function ButtonToGo() {
     const navigate = useNavigate();
 
     return (
-        <button className="btn" onClick={() => navigate("/timetable")}>
+        <button className="btn" onClick={() => navigate("/Subject")}>
             Go to Timetable
         </button>
     );
