@@ -34,9 +34,9 @@ const portions = {
 };
 
 function SubjectPortion() {
-  const { department, subject } = useParams(); 
+  const { department, subject } = useParams();
 
-  const portion = portions[department]?.[subject] || "No portion available"; 
+  const portion = portions[department]?.[subject] || "No portion available";
 
   return (
     <div className="portionbox">
