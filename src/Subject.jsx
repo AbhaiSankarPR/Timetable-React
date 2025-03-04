@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import "./table.css";
+import "./subject.css";
 
 function Table() {
   const navigate = useNavigate();
@@ -12,6 +13,7 @@ function Table() {
   const subj = department;
   return (
     <>
+    <div className="subject">
       {subj.map((exam, index) => (
         <div className="bar" key={index}>
           <div className="dayanddate">
@@ -34,7 +36,10 @@ function Table() {
             </svg>
           </div>
         </div>
+        
       ))}
+              </div>
+
     </>
   );
 }

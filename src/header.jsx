@@ -5,12 +5,12 @@ function Header() {
     const navigate = useNavigate();
 
     const handleProfileClick = () => {
-        if (window.location.pathname === "/") { 
+        if (window.location.pathname === "/") {
             navigate("/AdminLogin");
         }
     };
-    const home=() => {
-        if (window.location.pathname != "/") { 
+    const home = () => {
+        if (window.location.pathname != "/") {
             navigate("/");
         }
     };
@@ -22,7 +22,7 @@ function Header() {
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="56px"
-                    onClick={home} 
+                    onClick={home}
                     viewBox="0 -960 960 960"
                     width="56px"
                     fill="#c24413"
@@ -32,7 +32,7 @@ function Header() {
             </div>
             <svg
                 className="profile"
-                onClick={handleProfileClick} 
+                onClick={handleProfileClick}
                 xmlns="http://www.w3.org/2000/svg"
                 height="54px"
                 viewBox="0 -960 960 960"
