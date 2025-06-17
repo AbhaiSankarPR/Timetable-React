@@ -73,6 +73,7 @@
         height: 60px;
         width: 200px;
         font-size: 1rem;
-        /* top: 75vh; */
+        position: fixed;
+        top: 88dvh;
     }
 }

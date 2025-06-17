@@ -124,12 +124,12 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.timetable-intro h1 {
+.timetable-intro .heading {
   font-weight: 800;
   font-size: 2.5rem;
   color: var(--primary-700);
   margin-bottom: var(--spacing-sm);
-  background: linear-gradient(135deg, var(--primary-600), var(--accent-600));
+  background: linear-gradient(135deg, var(--accent-600), var(--primary-600));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -219,9 +219,10 @@ body {
     top: 19vh;
     width: 90%;
     padding: var(--spacing-md);
+    padding-bottom: 13dvh;
   }
 
-  .timetable-intro h1 {
+  .timetable-intro .heading {
     font-size: 1.5rem;
   }
 

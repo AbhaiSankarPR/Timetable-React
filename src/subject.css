@@ -37,17 +37,18 @@
     font-size: 1.5rem;
     font-weight: 600;
     font-family: var(--font-secondary);
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    box-shadow: var(--shadow-md);
+    /* background: rgba(255, 255, 255, 0.8); */
+    background: transparent;
+    /* backdrop-filter: blur(10px); */
+    /* box-shadow: var(--shadow-md); */
     border: 1px solid rgba(255, 255, 255, 0.2);
     transition: var(--transition-normal);
 }
 
 .subject .bar:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: var(--shadow-xl);
-    background: rgba(255, 255, 255, 0.95);
+    /* box-shadow: var(--shadow-xl); */
+    /* background: rgba(255, 255, 255, 0.95); */
 }
 
 .subject .details {
@@ -78,15 +79,15 @@
     fill: var(--primary-50);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 700px) {
     .subject .bar {
-        height: 6vh;
+        height: 9vh;
         width: 90vw;
         max-width: 500px;
         border-radius: var(--radius-lg);
         margin: var(--spacing-md);
         padding: var(--spacing-md);
-        font-size: 1.25rem;
+        font-size: 1.75rem;
         justify-content: space-between;
     }
 
@@ -108,15 +109,13 @@
     }
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 300px) {
     .subject .bar {
-        width: 95vw;
-        height: 6vh;
+        height: 12vh;
     }
     
     .subject .dayanddate {
-        flex: 0.6;
-        height: 10vh;
-        width: 95vw;
+        height: 12vh;
+        width: 45dvw;
     }
 }

@@ -214,6 +214,9 @@
   .create-login-form {
     padding: var(--spacing-xl);
   }
+  .create-login-container {
+    margin-top: 25dvh;
+  }
   
   .create-login-title {
     font-size: 1.5rem;

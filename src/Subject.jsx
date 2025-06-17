@@ -44,13 +44,13 @@ function Table() {
     <>
       <div className="subject">
         {departments.map((dept, index) => (
-          <div className="bar" key={index}>
-            <div className="dayanddate">
+          <div className="bar" key={index} onClick={() => navigate(`/timetable/${dept.toLowerCase()}`)}>
+            <div className="dayanddate" >
               <span>{dept}</span>
             </div>
             <div
               className="details"
-              onClick={() => navigate(`/timetable/${dept.toLowerCase()}`)}
+              
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

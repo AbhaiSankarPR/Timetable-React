@@ -1,4 +1,4 @@
-import React from "react"; 
+import React from "react";
 import "./about.css";
 
 function About() {
@@ -8,8 +8,8 @@ function About() {
             <div className="about-content">
                 <div className="about-section">
                     <p>
-                        The <strong>Timetable Management Web App</strong> is a simple and efficient scheduling tool built using React. 
-                        It helps users manage their weekly schedules with a clean, structured format, making time management easier. 
+                        The <strong>Timetable Management Web App</strong> is a simple and efficient scheduling tool built using React.
+                        It helps users manage their weekly schedules with a clean, structured format, making time management easier.
                         Designed with a modern UI, the app ensures a seamless user experience.
                     </p>
                 </div>
@@ -35,13 +35,27 @@ function About() {
                 <div className="about-section">
                     <h3>Purpose & Inspiration</h3>
                     <p>
-                        This project was developed as a hands-on learning experience in React development, state management, 
+                        This project was developed as a hands-on learning experience in React development, state management,
                         and frontend design. Future enhancements may include interactive scheduling, reminders, and user authentication.
                     </p>
                 </div>
 
                 <div className="about-section">
-                    <p className="developer"><strong>Developed by: Abhai Sankar P R & Anakha S</strong></p>
+                    <p className="developer">
+                        <strong>
+                            Developed by:{" "}
+                            <a
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.linkedin.com/in/abhai-sankar-p-r-2410b3296"
+                            >
+                                Abhai Sankar P R
+                            </a>{" "}
+                            &{" "}
+                            <a  target="_blank"
+                                rel="noopener noreferrer" href="https://www.linkedin.com/in/anakhavaishakham/">Anakha S</a>
+                        </strong>
+                    </p>
                 </div>
             </div>
         </div>

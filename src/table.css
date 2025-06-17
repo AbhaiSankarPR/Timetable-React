@@ -62,7 +62,6 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: var(--secondary-800);
     height: 70px;
     border-radius: var(--radius-xl);
     margin: var(--spacing-md);
@@ -70,17 +69,18 @@ body {
     font-size: 1.5rem;
     font-weight: 600;
     font-family: var(--font-secondary);
-    background: rgba(255, 255, 255, 0.8);
-    backdrop-filter: blur(10px);
-    box-shadow: var(--shadow-md);
+    /* background: rgba(255, 255, 255, 0.8); */
+    background: transparent;
+    /* backdrop-filter: blur(10px); */
+    /* box-shadow: var(--shadow-md); */
     border: 1px solid rgba(255, 255, 255, 0.2);
-    transition: var(--transition-normal);
+    transition: var(--transition-fast);
 }
 
 .bar:hover {
     transform: translateY(-3px) scale(1.02);
-    box-shadow: var(--shadow-xl);
-    background: rgba(255, 255, 255, 0.95);
+    /* box-shadow: var(--shadow-xl); */
+    /* background: rgba(255, 255, 255, 0.95); */
 }
 
 .details {
@@ -116,7 +116,7 @@ body {
     backdrop-filter: blur(15px);
     color: var(--secondary-800);
     border-radius: var(--radius-2xl);
-    margin-top: 85px;
+    margin-top: 35dvh;
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -140,7 +140,7 @@ body {
     background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
     color: white;
     width: 75vh;
-    height: 9.5vh;
+    height: 10.5vh;
     border-radius: var(--radius-xl);
     font-size: 1.75rem;
     font-family: var(--font-secondary);
@@ -173,17 +173,16 @@ body {
     color: var(--primary-600);
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 740px) {
     .upnext-container {
         flex-direction: column;
-        width: 90vw;
-        max-width: 400px;
+        width: 80dvw;
         height: auto;
         border-radius: var(--radius-xl);
         padding: var(--spacing-lg);
         font-size: 0.875rem;
         font-weight: 600;
-        margin-top: 40px;
+        margin-top: 28dvh;
         margin-left: auto;
         margin-right: auto;
     }
@@ -202,7 +201,7 @@ body {
 
     .bar {
         height: 60px;
-        width: 90vw;
+        width: 100dvw;
         max-width: 500px;
         border-radius: var(--radius-lg);
         margin: var(--spacing-md);
@@ -212,8 +211,8 @@ body {
     }
 
     .dayanddate {
-        width: 90vw;
-        max-width: 500px;
+        width: 100vw;
+        /* max-width: 500px; */
         color: var(--secondary-800);
         height: 50px;
         border-radius: var(--radius-lg);
@@ -227,12 +226,12 @@ body {
         margin-left: auto;
         font-size: 0.875rem;
         background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
-        height: 85%;
+        height: 6dvh;
         text-align: center;
         border-radius: var(--radius-md);
         padding: var(--spacing-xs) var(--spacing-sm);
         color: white;
-        max-width: 80px;
+        max-width: 18dvw;
         font-family: var(--font-primary);
         font-weight: 600;
     }
@@ -248,11 +247,11 @@ body {
 
 @media screen and (max-width: 480px) {
     .bar {
-        width: 95vw;
+        width: 100dvw;
         height: 50px;
         margin: var(--spacing-sm);
-        padding: var(--spacing-sm) var(--spacing-md);
         font-size: 1.125rem;
+        padding: 2dvw;
         justify-content: center;
     }
     
@@ -260,11 +259,12 @@ body {
         padding: var(--spacing-md);
         margin-left: auto;
         margin-right: auto;
+        margin-top: 7dvh;
     }
 
     .dayanddate {
-        flex: 0.6;
-        width: 95vw;
+        /* flex: 0.6; */
+        width: 100dvw;
     }
 
     .date-day {

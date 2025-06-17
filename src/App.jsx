@@ -45,7 +45,7 @@ function AppContent() {
 
       {location.pathname === "/" && (
         <div className="timetable-intro">
-          <h1>📅 Plan Smart, Study Smarter!</h1>
+          <h1>📅<span className='heading'> Plan Smart, Study Smarter!</span></h1>
           <p>
             Welcome to your <strong>Timetable Hub</strong>! 🎯 Stay on top of your schedule with an organized view of your classes.
             Whether you're gearing up for the day or revising a subject, this timetable is your go-to guide.

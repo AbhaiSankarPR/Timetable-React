@@ -156,14 +156,13 @@ function Table({ subject }) {
       </div>
 
       {subjectsList.map((exam, index) => (
-        <div className="bar" key={index}>
+        <div className="bar" key={index} onClick={() => navigate(`/subjects/${subject}/${exam.subject}`)}>
           <div className="dayanddate">
             <span>{exam.subject}</span>
             <div className="date-day">{exam.examDate}</div>
           </div>
           <div
             className="details"
-            onClick={() => navigate(`/subjects/${subject}/${exam.subject}`)}
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
