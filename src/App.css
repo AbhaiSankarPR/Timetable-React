@@ -199,7 +199,7 @@ body {
   .timetable-intro {
     font-size: 0.9rem;
     right: 2vh;
-    top: 19vh;
+    top: 14dvh;
     width: 90%;
     padding: var(--spacing-lg);
   }
@@ -216,7 +216,7 @@ body {
 @media screen and (max-width: 480px) {
   .timetable-intro {
     right: 2vh;
-    top: 19vh;
+    /* top: 19dvh; */
     width: 90%;
     padding: var(--spacing-md);
     padding-bottom: 13dvh;

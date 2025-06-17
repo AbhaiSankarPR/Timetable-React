@@ -169,6 +169,7 @@ h1 {
 @media screen and (max-width: 768px) {
     .admin-login-container {
         padding: var(--spacing-md);
+        margin-top: 5dvh;
     }
     
     .admin-login-form {

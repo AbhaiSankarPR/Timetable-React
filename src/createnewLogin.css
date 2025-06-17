@@ -199,6 +199,7 @@
 @media screen and (max-width: 768px) {
   .create-login-container {
     padding: var(--spacing-md);
+    margin-top: 5dvh;
   }
   
   .create-login-form {
