@@ -48,7 +48,7 @@ function AppContent() {
           <h1>📅 Plan Smart, Study Smarter!</h1>
           <p>
             Welcome to your <strong>Timetable Hub</strong>! 🎯 Stay on top of your schedule with an organized view of your classes.
-            Whether you’re gearing up for the day or revising a subject, this timetable is your go-to guide.
+            Whether you're gearing up for the day or revising a subject, this timetable is your go-to guide.
           </p>
           <ul>
             <li>✨ Effortlessly track your subjects & timings</li>

@@ -1,35 +1,78 @@
 .btn {
     height: 80px;
     width: 290px;
-    background-color: transparent;
-    color: #c24413;
-    transition: all 0.3s;
+    background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
+    color: white;
+    transition: var(--transition-normal);
     position: fixed;
     right: 40%;
     top: 70vh;
-    border: 1px;
-    border-style: double;
-    font-size: 25px;
-    font-family: "Poppins", serif;
-    font-weight: 800;
+    border: none;
+    border-radius: var(--radius-xl);
+    font-size: 1.25rem;
+    font-family: var(--font-secondary);
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: var(--shadow-lg);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: var(--transition-slow);
 }
 
 .btn:hover {
-    scale: 1.1;
+    transform: translateY(-3px) scale(1.05);
+    background: linear-gradient(135deg, var(--primary-600), var(--primary-700));
+    box-shadow: var(--shadow-xl);
+}
+
+.btn:hover::before {
+    left: 100%;
 }
 
 .btn:active {
-    border-style: none;
+    transform: translateY(-1px) scale(1.02);
+    box-shadow: var(--shadow-md);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
     .btn {
-        height: 80px;
-        width: 190px;
-        border-radius: 15px;
-        font-size: 24px;
-        left: 20%;
+        height: 70px;
+        width: 240px;
+        border-radius: var(--radius-lg);
+        font-size: 1.125rem;
+        left: 50%;
+        transform: translateX(-50%);
         top: 78vh;
     }
+    
+    .btn:hover {
+        transform: translateX(-50%) translateY(-3px) scale(1.05);
+    }
+    
+    .btn:active {
+        transform: translateX(-50%) translateY(-1px) scale(1.02);
+    }
+}
 
+@media screen and (max-width: 480px) {
+    .btn {
+        height: 60px;
+        width: 200px;
+        font-size: 1rem;
+        top: 75vh;
+    }
 }
