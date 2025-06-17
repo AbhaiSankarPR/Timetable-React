@@ -1,24 +1,36 @@
 .back-button {
-    background-color: transparent;
+    position: fixed;
+    top: 120px;
+    left: 20px;
+    background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
     color: white;
     border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    border-radius: 16px;
+    border-radius: var(--radius-full);
+    width: 50px;
+    height: 50px;
     cursor: pointer;
     display: flex;
     align-items: center;
-    position: fixed;
-    top: 20dvh;
-    left: 10vh;
     justify-content: center;
-    transition: transform 0.2s;
+    font-size: 1.25rem;
+    font-family: var(--font-secondary);
+    font-weight: 600;
+    box-shadow: var(--shadow-lg);
+    transition: var(--transition-normal);
+    z-index: 100;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
-.back-button svg {
-    fill: #c24413;
-    width: 34px;
-    height: 34px;
+.back-button:hover {
+    background: linear-gradient(135deg, var(--primary-600), var(--primary-700));
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: var(--shadow-xl);
+}
+
+.back-button:active {
+    transform: translateY(0) scale(1.02);
+    box-shadow: var(--shadow-md);
 }
 
 .back-button:hover {
