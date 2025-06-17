@@ -88,9 +88,10 @@
 
 @media screen and (max-width: 480px) {
     .portionbox {
-        width: 98vw;
+        width:88dvw;
         padding: var(--spacing-lg);
         font-size: 0.95rem;
+        height: max-content;
     }
     
     .portionbox h2 {
