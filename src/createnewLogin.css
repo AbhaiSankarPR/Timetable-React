@@ -199,11 +199,11 @@
 @media screen and (max-width: 768px) {
   .create-login-container {
     padding: var(--spacing-md);
-    margin-top: 5dvh;
   }
   
   .create-login-form {
     padding: var(--spacing-2xl);
+    padding-top: 0;
   }
   
   .create-login-title {
@@ -214,6 +214,7 @@
 @media screen and (max-width: 480px) {
   .create-login-form {
     padding: var(--spacing-xl);
+    padding-top: 0;
   }
   .create-login-container {
     margin-top: 25dvh;
