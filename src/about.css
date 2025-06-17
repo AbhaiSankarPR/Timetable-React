@@ -167,11 +167,13 @@
 }
 @media screen and (max-width: 400px) {
     .about-container {
-        top: 90dvh;
+        top: 600px;
+        margin-top: 49dvh;
+
     }
 }
-@media screen and (max-width: 333px) {
+/* @media screen and (max-width: 333px) {
     .about-container {
-        top: 100dvh;
+        top:50dvh;
     }
-}
+} */
