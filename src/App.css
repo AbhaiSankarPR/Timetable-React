@@ -215,9 +215,10 @@ body {
 
 @media screen and (max-width: 480px) {
   .timetable-intro {
-    right: 2vh;
+    /* right: 2vh ; */
     /* top: 19dvh; */
     width: 90%;
+    margin: 4dvh;
     padding: var(--spacing-md);
     padding-bottom: 13dvh;
   }
