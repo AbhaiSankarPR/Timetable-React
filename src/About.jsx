@@ -41,7 +41,7 @@ function About() {
                 </div>
 
                 <div className="about-section">
-                    <p className="developer"><strong>Developed by: Abhai Sankar P R</strong></p>
+                    <p className="developer"><strong>Developed by: Abhai Sankar P R & Anakha S</strong></p>
                 </div>
             </div>
         </div>
