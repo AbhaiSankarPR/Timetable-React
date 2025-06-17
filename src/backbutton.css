@@ -1,13 +1,13 @@
 .back-button {
     position: fixed;
-    top: 120px;
-    left: 20px;
+    top: 20dvh;
+    left: 10dvh;
     background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
     color: white;
     border: none;
     border-radius: var(--radius-full);
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -39,15 +39,17 @@
 }
 @media screen and (max-width: 1000px) {
     .back-button {
-        font-size: 5px;
-        left: -1px;
+        font-size: 2dvh;
+        left: 6px;
+        width: 7dvh;
+        height: 12dvw;
     }
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
     .back-button {
         height: 60px;
         width: 60px;
         font-size: 5px;
         left: -5px;
     }
-}
+} */

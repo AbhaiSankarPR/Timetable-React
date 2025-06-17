@@ -41,11 +41,13 @@ function CreatenewLogin() {
     };
 
     return (
-        <div className="create-login">
-            <h1>Create Admin Login</h1>
-            <label htmlFor="name">Name</label>
+        <div className="create-login-container">
+            <div className="create-login-form">
+            <h1 className="create-login-title">Create Admin Login</h1>
+            <label className="form-label" htmlFor="name">Name</label>
             <input 
                 type="text" 
+                className="form-input"
                 value={name} 
                 placeholder="Enter your name" 
                 onChange={(e) => setName(e.target.value)} 
@@ -58,36 +60,41 @@ function CreatenewLogin() {
                 onChange={(e) => setUsername(e.target.value)} 
             /> */}
             
-            <label htmlFor="email">Email</label>
+            <label className="form-label" htmlFor="email">Email</label>
             <input 
                 type="email" 
                 value={email} 
+                className="form-input"
                 placeholder="Enter your email" 
                 onChange={(e) => setEmail(e.target.value)} 
             />
             
-            <label htmlFor="password">Password</label>
+            <label className="form-label"  htmlFor="password">Password</label>
             <input 
                 type="password" 
+                className="form-input"
                 value={password} 
                 placeholder="Enter your password" 
                 onChange={(e) => setPassword(e.target.value)} 
             />
             
-            <label htmlFor="confirm-password">Confirm Password</label>
+            <label className="form-label" htmlFor="confirm-password">Confirm Password</label>
             <input 
                 type="password" 
+                className="form-input"
                 value={confirmPassword} 
                 placeholder="Re-enter your password" 
                 onChange={(e) => setConfirmPassword(e.target.value)} 
             />
-            <label htmlFor="Secret">Secret ID</label>
+            <label className="form-label" htmlFor="Secret">Secret ID</label>
             <input 
                 type="password" 
+                className="form-input"
                 value={secretid}
                 placeholder="Secret ID" 
                 onChange={(e) => setSecretid(e.target.value)}/>   
-            <button onClick={createAccount}>Create Account</button>
+            <button className="create-button" onClick={createAccount}>Create Account</button>
+        </div>
         </div>
     );
 }

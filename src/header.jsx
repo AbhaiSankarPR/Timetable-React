@@ -17,12 +17,11 @@ function Header() {
 
     return (
         <div className="header">
-            <div className="heading">
+            <div className="heading" onClick={home}>
                 Organizerr
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
                     height="56px"
-                    onClick={home}
                     viewBox="0 -960 960 960"
                     width="56px"
                     fill="#c24413"

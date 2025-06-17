@@ -2,6 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 35dvh;
   min-height: 100vh;
   padding: var(--spacing-lg);
   background: linear-gradient(135deg, var(--primary-50) 0%, var(--secondary-50) 100%);
@@ -10,7 +11,7 @@
 .create-login-form {
   background: rgba(255, 255, 255, 0.95);
   backdrop-filter: blur(15px);
-  padding: var(--spacing-3xl);
+  padding: var(--spacing-lg);
   border-radius: var(--radius-2xl);
   box-shadow: var(--shadow-2xl);
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -43,18 +44,18 @@
   background-clip: text;
 }
 
-.create-login-subtitle {
+/* .create-login-subtitle {
   font-family: var(--font-primary);
   font-size: 0.875rem;
   color: var(--secondary-600);
   text-align: center;
   margin-bottom: var(--spacing-xl);
   line-height: 1.6;
-}
+} */
 
-.form-group {
+/* .form-group {
   margin-bottom: var(--spacing-lg);
-}
+} */
 
 .form-label {
   display: block;
@@ -89,7 +90,7 @@
 .form-input::placeholder {
   color: var(--secondary-400);
 }
-
+/* 
 .password-requirements {
   font-size: 0.75rem;
   color: var(--secondary-500);
@@ -114,7 +115,7 @@
 
 .requirement-icon {
   font-size: 0.875rem;
-}
+} */
 
 .create-button {
   width: 100%;

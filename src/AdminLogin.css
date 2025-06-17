@@ -14,7 +14,8 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    margin-top:15dvh;
+    min-height: 150vh;
     padding: var(--spacing-lg);
     background: linear-gradient(135deg, var(--primary-50) 0%, var(--secondary-50) 100%);
 }
@@ -22,7 +23,7 @@ h1 {
 .admin-login-form {
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(15px);
-    padding: var(--spacing-3xl);
+    padding: var(--spacing-2xl);
     border-radius: var(--radius-2xl);
     box-shadow: var(--shadow-2xl);
     border: 1px solid rgba(255, 255, 255, 0.3);
@@ -127,7 +128,7 @@ h1 {
     transform: none;
     box-shadow: none;
 }
-
+/* 
 .error-message {
     color: var(--error-600);
     font-size: 0.875rem;
@@ -150,6 +151,19 @@ h1 {
     background: var(--success-50);
     border-radius: var(--radius-sm);
     border: 1px solid var(--success-200);
+} */
+
+.login-info{
+    font-family: var(--font-secondary);
+    font-size: 0.605rem;
+    font-weight: 600;
+    color: var(--secondary-700);
+    margin-bottom: var(--spacing-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+.signup-link{
+    color: var(--accent-400);
 }
 
 @media screen and (max-width: 768px) {

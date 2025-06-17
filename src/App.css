@@ -97,8 +97,8 @@ body {
 
 html,
 body {
-  width: 100%;
-  height: 100%;
+  width: 100dvw;
+  height: 100dvh;
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -109,16 +109,16 @@ body {
   color: var(--secondary-700);
   margin-bottom: var(--spacing-2xl);
   position: absolute;
-  right: 15vh;
-  top: 25vh;
+  right: 15dvh;
+  top: 22dvh;
   text-align: right;
   font-family: var(--font-secondary);
   font-weight: 500;
-  width: 80%;
-  max-width: 600px;
+  width: 70dvw;
+  max-width: 80%;
   background: rgba(255, 255, 255, 0.8);
   backdrop-filter: blur(10px);
-  padding: var(--spacing-xl);
+  padding: var(--spacing-md);
   border-radius: var(--radius-xl);
   box-shadow: var(--shadow-lg);
   border: 1px solid rgba(255, 255, 255, 0.2);
@@ -128,7 +128,7 @@ body {
   font-weight: 800;
   font-size: 2.5rem;
   color: var(--primary-700);
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-sm);
   background: linear-gradient(135deg, var(--primary-600), var(--accent-600));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -176,7 +176,7 @@ body {
 }
 
 .timetable-intro .KnowMore {
-  font-size: 1rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: var(--primary-600);
   cursor: pointer;
@@ -184,7 +184,7 @@ body {
   transition: var(--transition-normal);
   padding: var(--spacing-sm) var(--spacing-md);
   border-radius: var(--radius-md);
-  background: linear-gradient(135deg, var(--primary-50), var(--accent-50));
+  /* background: linear-gradient(135deg, var(--primary-50), var(--accent-50)); */
   border: 1px solid var(--primary-200);
 }
 

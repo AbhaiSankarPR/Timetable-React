@@ -1,12 +1,12 @@
 .btn {
-    height: 80px;
-    width: 290px;
+    height: 15%;
+    width: 95%;
     background: linear-gradient(135deg, var(--primary-500), var(--primary-600));
     color: white;
     transition: var(--transition-normal);
     position: fixed;
-    right: 40%;
-    top: 70vh;
+    right: 5dvw;
+    top: 41dvh;
     border: none;
     border-radius: var(--radius-xl);
     font-size: 1.25rem;
@@ -56,7 +56,7 @@
         font-size: 1.125rem;
         left: 50%;
         transform: translateX(-50%);
-        top: 78vh;
+        bottom: 10px;
     }
     
     .btn:hover {
@@ -73,6 +73,6 @@
         height: 60px;
         width: 200px;
         font-size: 1rem;
-        top: 75vh;
+        /* top: 75vh; */
     }
 }
