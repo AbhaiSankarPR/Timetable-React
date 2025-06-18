@@ -31,9 +31,9 @@ Timetable-React is a lightweight and responsive web app designed to help student
 
 Here are some screenshots from the app:
 
-![Screenshot 1](./assets/HomePage(Desktop).jpg)
-![Screenshot 2](./assets/LoginPage(Desktop).jpg)
-![Screenshot 3](./assets/Page2(Desktop).jpg)
+![Screenshot 1](./assets/HomePage(Desktop).png)
+![Screenshot 2](./assets/LoginPage(Desktop).png)
+![Screenshot 3](./assets/Page2(Desktop).png)
 ![Screenshot 4](./assets/HomePage(Phone).jpg)
 ![Screenshot 5](./assets/Page3(Phone).jpg)
 
