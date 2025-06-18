@@ -1,38 +1,55 @@
 # 📅 Timetable-React
 
-A clean and responsive web app to manage and view your exam timetables, built using React and Vite.
+Timetable-React is a lightweight and responsive web app designed to help students easily view and manage their exam timetables. Built with **React** and **Vite**, it prioritizes performance, simplicity, and ease of use.
 
 ## 🚀 Live Demo
 
-👉 [Check it out here](https://timetable-react.vercel.app)
+👉 [View the app](https://timetable-react.vercel.app)
 
 ## 🛠️ Tech Stack
 
-- ⚛️ React (Frontend)
-- 🔥 Firebase (Backend / Database)
-- 💨 Vite (Build tool for lightning-fast HMR)
-- 🎨 CSS (Custom responsive styling)
+- ⚛️ **React** – Frontend framework  
+- ⚡ **Vite** – Development and build tool for lightning-fast HMR  
+- 🔥 **Firebase** – Realtime database for data storage and retrieval  
+- 🎨 **CSS** – Custom styling for responsive UI
 
-## 👨‍💻 Project Roles
+## 👨‍💻 Contributors
 
-- **Abhai Sankar P R** – UI/UX Design, React Component Structure, Styling
-- **Anakha S** – Firebase Integration, Backend Support, Assistance with CSS
+- **Abhai Sankar P R** – Frontend development, component architecture, CSS design, UI/UX  
+- **Anakha S** – Firebase setup and integration, backend logic, support in styling
 
-## 📦 Features
+## 🎯 Features
 
-- 📅 Displays exam timetables in a clean card layout
-- 🌐 Hosted on Vercel for fast access
-- 💡 Uses Firebase for real-time data updates
-- 📱 Fully responsive for mobile and desktop
+- 📅 Displays exam timetables in a card-based UI  
+- 💾 Data sourced dynamically from Firebase  
+- 🖥️ Clean and minimalist design  
+- 📱 Fully responsive on all devices  
+- ⚡ Fast build and hot reload via Vite  
+- ☁️ Hosted on Vercel
 
-## 🧑‍🎓 Why It Exists
+## 🖼️ Preview
 
-This project was inspired by a need among friends to easily manage their exam schedule in one place. A quick, clean, and accessible solution — no login or fuss required.
+Here are some screenshots from the app:
 
-## 📁 Setup Instructions
+![Screenshot 1](./assets/HomePage(Desktop).jpg)
+![Screenshot 2](./assets/LoginPage(Desktop).jpg)
+![Screenshot 3](./assets/Page2(Desktop).jpg)
+![Screenshot 4](./assets/HomePage(Phone).jpg)
+![Screenshot 5](./assets/Page3(Phone).jpg)
+
+## 🔧 Getting Started
+
+To run the project locally:
 
 ```bash
+# Clone the repo
 git clone https://github.com/AbhaiSankarPR/Timetable-React.git
+
+# Navigate to project directory
 cd Timetable-React
+
+# Install dependencies
 npm install
+
+# Start development server
 npm run dev
